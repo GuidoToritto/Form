@@ -14,9 +14,11 @@
   td {
     height: 35px;
   }
-  .turnos{
+
+  .turnos {
     font-size: 30px;
   }
+
 
   @media screen and (max-width: 992px) {
     body {
@@ -24,34 +26,36 @@
       font-weight: bold;
       margin: 0 auto;
     }
-    td{
+
+    td {
       height: 20px;
     }
-    .turnos{
+
+    .turnos {
       font-size: 20px;
     }
   }
 </style>
 
-<body class="is-uppercase has-background-light is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
+<body class="is-uppercase is-flex is-justify-content-center is-align-items-center is-flex-direction-column">
   <div class="column has-text-centered is-mobile is-centered ">
-    <table class="table is-bordered is-fullwidth ">
+    <table class="table is-striped is-narrow is-hoverable is-fullwidth">
 
 
       <tbody>
         <thead>
           <tr>
-            <td colspan="4" rowspan="3"></td>
-            <th class="has-text-centered  turnos" rowspan="3" colspan="3" style="vertical-align: middle;">Turnos</th>
-            <td colspan="2">Comprobante</td>
+            <td colspan="3" rowspan="3"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Dunlop_brand_logo.svg/1200px-Dunlop_brand_logo.svg.png" width="50%;" alt=""></td>
+            <th class="has-text-centered  turnos" rowspan="3" colspan="4"></th>
+            <th colspan="2" class="has-text-centered">Comprobante</th>
             <td colspan="2">1511-1789-21170</td>
           </tr>
           <tr>
-            <td colspan="2">Fecha</td>
+            <th colspan="2" class="has-text-centered">Fecha</th>
             <td colspan="2">15//11/2023 11:27</td>
           </tr>
           <tr>
-            <td colspan="2">Semana</td>
+            <th colspan="2" class="has-text-centered">Semana</th>
             <td colspan="2">46</td>
           </tr>
         </thead>
@@ -59,19 +63,24 @@
       <tbody>
         <thead>
           <tr>
-            <th title="Inicio" colspan="2" class="has-text-centered">Inicio</td>
+            <th title="Inicio" colspan="2" class="has-text-centered is-vcentered">Inicio</td>
             <td colspan="2">
-              </th>
-            <th title="Sector" colspan="1" rowspan="2"   style="vertical-align: middle;" class="has-text-centered">Sector</td>
-            <td colspan="3" rowspan="2" class="has-text-centered" style="vertical-align: middle;">
-              2180 - Laboratorio</td>
-
+              <textarea class="textarea" rows="1"></textarea>
+            </td>
+            <th title="Sector" colspan="2" rowspan="2" style="vertical-align: middle;" class="has-text-centered">Sector
+              </td>
             <td colspan="3" rowspan="2"></td>
+            <td colspan="3" rowspan="2" class="has-text-centered" style="vertical-align: middle;">
+              <button class="button is-medium has-text-black is-rounded" style="background-color: #FEAF00;">Repetir horarios de la semana anterior</button>
+            </td>
+
+
           </tr>
           <tr>
-            <th colspan="2" title="Fin" class="has-text-centered">Fin</td>
-            <td colspan="2"></td>
-
+            <th colspan="2" title="Fin" class="has-text-centered is-vcentered">Fin</td>
+            <td colspan="2">
+              <textarea class="textarea" rows="1"></textarea>
+            </td>
           </tr>
 
         </thead>
@@ -80,265 +89,736 @@
       </tbody>
       <tbody>
         <thead>
-          <tr>
-            <th title="Legajo" colspan="1" class="has-text-centered">Legajo</th>
-            <th title="Empleado" colspan="2" class="has-text-centered">Empleado</th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
+          <tr class=" has-background-light">
+            <th class="has-text-centered">Legajo</th>
+            <th class="has-text-centered" colspan="2">Empleado</th>
+            <td class="is-capitalized">Miercoles</td>
+            <td class="is-capitalized">Jueves</td>
+            <td class="is-capitalized">Viernes</td>
+            <td class="is-capitalized">Sábado</td>
+            <td class="is-capitalized">Domingo</td>
+            <td class="is-capitalized">Lunes</td>
+            <td class="is-capitalized">Martes</td>
+            <th class="has-text-centered">Replicar Todos</th>
 
           </tr>
         </thead>
-        <tr>
-          <td colspan="1">814</td>
-          <td colspan="2">Caceres, Maximiliano Emmanuel</td>
-          <td>6:00hs a 14:30hs</td>
-          <td>14:30hs a 23hs</td>
-          <td></td>
-          <td></td>
-          <td>14:30hs a 23:00hs</td>
-          <td></td>
-          <td></td>
-          <td><a href="#">Replicar horario</a></td>
-        </tr>
-
-        <tr>
-          <td>817</td>
-          <td colspan="2">Furlanetto, Rolando Gabriel</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>14:30hs a 23:00hs</td>
-          <td></td>
-          <td>23:00hs a 6:00hs</td>
-          <td></td>
-          <td><a href="#">Replicar horario</a></td>
-        </tr>
-
-        <tr>
-          <td>879</td>
-          <td colspan="2">Rodriguez, Juan Carlos</td>
-          <td></td>
-          <td></td>
-          <td>06:00hs a 14:30hs</td>
-          <td></td>
-          <td>14:30hs a 23:00hs</td>
-          <td></td>
-          <td>06:00hs a 14:30hs</td>
-          <td><a href="#">Replicar horario</a></td>
-        </tr>
 
 
         <tr>
-          <td></td>
-          <td colspan="2"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td colspan="2"><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+
+          <td colspan="1"><textarea class="textarea" type="number" rows="1"></textarea></td>
+
+        </tr>
+        <tr>
+          <td><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td colspan="2"><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+
+          <td colspan="1"><textarea class="textarea" type="number" rows="1"></textarea></td>
+
+        </tr>
+        <tr>
+          <td><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td colspan="2"><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+
+          <td colspan="1"><textarea class="textarea" type="number" rows="1"></textarea></td>
+
         </tr>
 
-        <tr>
-          <td></td>
-          <td colspan="2"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
 
-        <tr>
-          <td></td>
-          <td colspan="2"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
 
-        <tr>
-          <td></td>
-          <td colspan="2"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        <tr>
-          <td></td>
-          <td colspan="2"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
       </tbody>
       <tbody>
         <tr>
-          <th colspan="12" class="has-text-centered">Empleado a prestamo de otros sectores</th>
+          <th colspan="12" class="has-text-centered has-background-grey-lighter">Empleado a prestamo de otros sectores
+          </th>
         </tr>
       </tbody>
       <tbody>
         <thead>
           <tr>
-            <th title="Legajo" colspan="1" class="has-text-centered">Legajo</th>
-            <th title="Empleado" colspan="2" class="has-text-centered">Empleado</th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-            <th colspan="1"></th>
-
+          <tr class=" has-background-light">
+            <th class="has-text-centered">Legajo</th>
+            <th class="has-text-centered" colspan="2">Empleado</th>
+            <td class="is-capitalized">Miercoles</td>
+            <td class="is-capitalized">Jueves</td>
+            <td class="is-capitalized">Viernes</td>
+            <td class="is-capitalized">Sábado</td>
+            <td class="is-capitalized">Domingo</td>
+            <td class="is-capitalized">Lunes</td>
+            <td class="is-capitalized">Martes</td>
+            <th class="has-text-centered">Replicar Todos</th>
+          </tr>
           </tr>
         </thead>
         <tr>
-          <td colspan="1">814</td>
-          <td colspan="2">Caceres, Maximiliano Emmanuel</td>
-          <td>6:00hs a 14:30hs</td>
-          <td>14:30hs a 23hs</td>
-          <td></td>
-          <td></td>
-          <td>14:30hs a 23:00hs</td>
-          <td></td>
-          <td></td>
-          <td><a href="#">Replicar horario</a></td>
-        </tr>
+          <td><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td colspan="2"><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
 
+          <td colspan="1"><textarea class="textarea" type="number" rows="1"></textarea></td>
+
+        </tr>
         <tr>
-          <td>817</td>
-          <td colspan="2">Furlanetto, Rolando Gabriel</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>14:30hs a 23:00hs</td>
-          <td></td>
-          <td>23:00hs a 6:00hs</td>
-          <td></td>
-          <td><a href="#">Replicar horario</a></td>
-        </tr>
+          <td><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td colspan="2"><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
 
+          <td colspan="1"><textarea class="textarea" type="number" rows="1"></textarea></td>
+
+        </tr>
         <tr>
-          <td>879</td>
-          <td colspan="2">Rodriguez, Juan Carlos</td>
-          <td></td>
-          <td></td>
-          <td>06:00hs a 14:30hs</td>
-          <td></td>
-          <td>14:30hs a 23:00hs</td>
-          <td></td>
-          <td>06:00hs a 14:30hs</td>
-          <td><a href="#">Replicar horario</a></td>
+          <td><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td colspan="2"><textarea class="textarea" type="number" rows="1"></textarea></td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+          <td class="has-text-centered is is-vcentered">
+            <div class="select is-small">
+              <select>
+                <option>Seleccionar horario</option>
+                <option>06:00hs a 14:30hs</option>
+                <option>14:30hs a 23:00hs</option>
+                <option>23:00hs a 06:00hs</option>
+                <option>Licencia</option>
+                <option>A prestamo</option>
+                <option>Franco</option>
+                <option>Feriado</option>
+                <option>Especificar otro</option>
+              </select>
+            </div>
+          </td>
+
+          <td colspan="1"><textarea class="textarea" type="number" rows="1"></textarea></td>
+
         </tr>
 
-
-        <tr>
-          <td></td>
-          <td colspan="2"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        <tr>
-          <td></td>
-          <td colspan="2"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        <tr>
-          <td></td>
-          <td colspan="2"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        <tr>
-          <td></td>
-          <td colspan="2"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        <tr>
-          <td></td>
-          <td colspan="2"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
       </tbody>
       <tbody>
       <tfoot>
-        <tr>
-          <th title="Legajo" colspan="4" class="has-text-centered">Observaciones</th>
-          <th title="Empleado" colspan="4" class="has-text-centered">Realizado por</th>
-          <th title="Empleado" colspan="4" class="has-text-centered">Autorización Walter Falco</th>
+        <tr class=" has-background-light">
+          <th colspan="4" class="has-text-centered">Observaciones</th>
+          <th colspan="4" class="has-text-centered">Realizado por</th>
+          <th colspan="4" class="has-text-centered">Autorización Walter Falco</th>
         </tr>
         <tr>
-          <td colspan="4"></td>
-          <td colspan="4"></td>
-          <td colspan="4"></td>
+          <td colspan="4"><textarea class="textarea" rows="1"></textarea></td>
+          <td colspan="4"><textarea class="textarea" rows="1"></textarea></td>
+          <td colspan="4"><textarea class="textarea" rows="1"></textarea></td>
 
         </tr>
-
       </tfoot>
       </tbody>
 
