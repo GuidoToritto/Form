@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Formulario</title>
+</head>
+
+<body class="is-uppercase">
+
+    <div class="is-flex is-flex-wrap-wrap is-justify-content-end has-text-centered">
+        <div class="m-3">
+            <p class="has-text-weight-bold mb-1">Comprobante</p>
+            <span class="tag is-medium">1511-1789-21170</span>
+        </div>
+
+        <div class="m-3">
+            <p class="has-text-weight-bold mb-1">Fecha</p>
+            <span class="tag is-medium">16/11/2023 11:27</span>
+        </div>
+
+        <div class="m-3">
+            <p class="has-text-weight-bold mb-1">Semana</p>
+            <span class="tag is-medium ">46</span>
+        </div>
+
+    </div>
+
+
+    <!--Opcion 1-->
+    <!-- <div class="table-container m-5">
+        <table class="table is-flex is-justify-content-space-between m-1">
+            <tbody class="is-flex">
+                <tr class="is-flex-direction-column">
+                    <td class="columns is-vcentered">
+                        <p class="column has-text-centered">Inicio</p>
+                        <input type="text" class="input column is-small">
+                    </td>
+                    <td class="columns is-vcentered">
+                        <p class="column has-text-centered">Fin</p>
+                        <input type="text" class="input column is-small">
+                    </td>
+                </tr>
+                <tr class="is-flex is-justify-content-center is-align-self-center">
+                    <td>
+                        <span class="tag is-large has-text-weight-bold is-responsive mx-5">Sector</span>
+                    </td>
+                </tr>
+            </tbody>
+
+            <tbody class="is-flex is-justify-content-center is-align-self-center ">
+                <td class="is-vcentered">
+                    <button class="button is-medium is-responsive has-text-black"
+                        style="background-color: #FEAF00;">Repetir horarios de la semana anterior</button>
+                </td>
+            </tbody>
+        </table>
+    </div> -->
+
+
+    <div class="table-container">
+        <table class="table  is-striped  is-hoverable is-fullwidth">
+            <!--Opcion 2-->
+            <thead>
+                <tr>
+                    <th title="Inicio" colspan="1" class="has-text-centered is-vcentered">Inicio
+                    </th>
+                    <td colspan="1">
+                        <input class="input m-2" type="text" rows="1"></input>
+                    </td>
+                    <th colspan="1" rowspan="2" class="is-vcentered has-text-centered">
+                        <span class="tag is-large">Sector</span>
+                    </th>
+                    <td colspan="5" rowspan="2"></td>
+                    <td colspan="3" rowspan="2" class="has-text-centered is-vcentered">
+                        <button class="button is-medium has-text-black" style="background-color: #FEAF00;">Repetir horarios de la semana anterior</button>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <th colspan="1" title="Fin" class="has-text-centered is-vcentered">Fin
+                    </th>
+                    <td colspan="1">
+                        <input class="input m-2" type="text" rows="1"></input>
+                    </td>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <thead>
+                    <tr class="has-background-light has-text-centered">
+                        <td class="has-text-weight-bold">Legajo</td>
+                        <td class="has-text-weight-bold">Empleado</td>
+                        <td>Miercoles</td>
+                        <td>Jueves</td>
+                        <td>Viernes</td>
+                        <td>Sábado</td>
+                        <td>Domingo</td>
+                        <td>Lunes</td>
+                        <td>Martes</td>
+                        <td class="has-text-weight-bold">Replicar Todos</td>
+                    </tr>
+                </thead>
+
+
+            <tbody>
+                <tr>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input my-3" type="number">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input" type="text">
+                        </input>
+                    </td>
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input" type="text">
+                        </input>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input my-3" type="number">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input" type="text">
+                        </input>
+                    </td>
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input" type="text">
+                        </input>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input my-3" type="number">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input" type="text">
+                        </input>
+                    </td>
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input" type="text">
+                        </input>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input my-3" type="number">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input" type="text">
+                        </input>
+                    </td>
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input" type="text">
+                        </input>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input my-3" type="number">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input" type="text">
+                        </input>
+                    </td>
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input is-small" type="date">
+                        </input>
+                    </td>
+
+
+                    <td class="has-text-centered  is-vcentered">
+                        <input class="input" type="text">
+                        </input>
+                    </td>
+
+                </tr>
+                
+                
+                
+                
+
+            </tbody>
+
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="dropdown navbar-item has-background-white-bis  is-justify-content-center ">
+        <div class="dropdown-trigger ">
+            <a class="navbar-link has-text-weight-bold " aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>Empleado a prestamo de otros sectores</span>
+                <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+            </a>
+        </div>
+        <div class="navbar-dropdown table-container">
+
+            <table class="table  is-striped  is-hoverable is-fullwidth">
+                <tbody>
+                    <thead>
+                        <tr class="has-background-light has-text-centered">
+                            <td class="has-text-weight-bold">Legajo</td>
+                            <td class="has-text-weight-bold">Empleado</td>
+                            <td>Miercoles</td>
+                            <td>Jueves</td>
+                            <td>Viernes</td>
+                            <td>Sábado</td>
+                            <td>Domingo</td>
+                            <td>Lunes</td>
+                            <td>Martes</td>
+                            <td class="has-text-weight-bold">Replicar Todos</td>
+                        </tr>
+                    </thead>
+
+
+                <tbody>
+                    <tr>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input my-3" type="number">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input" type="text">
+                            </input>
+                        </td>
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+    
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input" type="text">
+                            </input>
+                        </td>
+    
+                    </tr>
+                    <tr>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input my-3" type="number">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input" type="text">
+                            </input>
+                        </td>
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+    
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input" type="text">
+                            </input>
+                        </td>
+    
+                    </tr>
+                    <tr>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input my-3" type="number">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input" type="text">
+                            </input>
+                        </td>
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+    
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input" type="text">
+                            </input>
+                        </td>
+    
+                    </tr>
+                    <tr>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input my-3" type="number">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input" type="text">
+                            </input>
+                        </td>
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input is-small" type="date">
+                            </input>
+                        </td>
+    
+    
+                        <td class="has-text-centered  is-vcentered">
+                            <input class="input" type="text">
+                            </input>
+                        </td>
+    
+                    </tr>
+                </tbody>
+
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+
+    <div class="table-container">
+        <table class="table is-striped is-hoverable is-fullwidth">
+            <tbody>
+                <thead>
+                    <tr class="has-background-light has-text-centered has-text-weight-bold">
+                        <td>Observaciones</td>
+                        <td>Realizado por</td>
+                        <td>Autorización Walter Falco</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="input my-3"></td>
+                        <td><input type="text" class="input my-3"></td>
+                        <td><input type="text" class="input my-3"></td>
+                    </tr>
+                </thead>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        //DOMContentLoaded - it fires when initial HTML document has been completely loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // querySelector - it returns the element within the document that matches the specified selector
+            var dropdown = document.querySelector('.dropdown');
+
+            //addEventListener - attaches an event handler to the specified element.
+            dropdown.addEventListener('click', function (event) {
+
+                //event.stopPropagation() - it stops the bubbling of an event to parent elements, by preventing parent event handlers from being executed
+                event.stopPropagation();
+
+                //classList.toggle - it toggles between adding and removing a class name from an element
+                dropdown.classList.toggle('is-active');
+            });
+        });        
+    </script>
+
+</body>
+
+</html>
