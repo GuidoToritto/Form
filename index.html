@@ -10,76 +10,81 @@
 
 <body class="is-uppercase">
 
-    <div class="is-flex is-flex-wrap-wrap is-justify-content-end has-text-centered">
-        <div class="m-3">
-            <p class="has-text-weight-bold mb-1">Comprobante</p>
-            <span class="tag is-medium">1511-1789-21170</span>
-        </div>
-
-        <div class="m-3">
-            <p class="has-text-weight-bold mb-1">Fecha</p>
-            <span class="tag is-medium">16/11/2023 11:27</span>
-        </div>
-
-        <div class="m-3">
-            <p class="has-text-weight-bold mb-1">Semana</p>
-            <span class="tag is-medium ">46</span>
-        </div>
-
-    </div>
-
-
-
-
-    <div class="is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap ">
-        <div class="is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap ">
-
-            <div class="is-flex is-justify-content-center is-align-items-center">
-                <p class="px-2 has-text-weight-bold px-5">Inicio</p>
-                <input type="date" class="input is-small">
-            </div>
-
-            <div class="is-flex is-justify-content-center is-align-items-center">
-                <p class="px-2 has-text-weight-bold px-5">Fin</p>
-                <input type="date" class="input is-small">
-            </div>
-            <div class="m-5 dropdown">
-                <div class="dropdown-trigger has-background-white-ter">
-                    <a class="navbar-link has-text-weight-bold " aria-haspopup="true" aria-controls="dropdown-menu">
-                        <span>Sector</span>
-                        <span class="icon is-small">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </span>
-                    </a>
+    <div class="is-flex is-justify-content-end m-2">
+        <div class="is-flex  is-flex-direction-column  has-text-centered">
+            <div class="is-flex is-justify-content-space-around ">
+                <div class="is-flex is-justify-content-center is-align-items-center my-2">
+                   
+                    <p class="has-text-weight-bold mb-1 px-2">Semana</p>
+                    <span class="tag is-small ">46</span>
+                    
                 </div>
-
-                <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                    <div class="dropdown-content">
-                        <a href="#" class="dropdown-item">
-                            Opcion 1
-                        </a>
-                        <a href="#" class="dropdown-item">
-                            Opcion 2
-                        </a>
-                        <a href="#" class="dropdown-item">
-                            Opcion 3
-                        </a>
-                        <a href="#" class="dropdown-item">
-                            Opcion 4
-                        </a>
+    
+                <div class="is-flex is-justify-content-center is-align-items-center my-2">
+                    <p class="has-text-weight-bold mb-1 px-2">Comprobante</p>
+                    <span class="tag is-small">1511-1789-21170</span>
+                </div>  
+            </div>
+            <div class="is-flex is-justify-content-space-around ">
+                <div class="is-flex is-justify-content-center is-align-items-center my-2">
+                    <p class="px-3 has-text-weight-bold is-size-7">Inicio</p>
+                    <input type="date" class="input is-small">
+                </div>
+    
+                <div class="is-flex is-justify-content-center is-align-items-center my-2">
+                    
+                    <p class="has-text-weight-bold mb-1 px-2">Fecha</p>
+                    <span class="tag is-small">16/11/2023 11:27</span>
+                </div>  
+            </div>
+            <div class="is-flex is-justify-content-space-around ">
+                <div class="is-flex is-justify-content-center is-align-items-center my-2">
+                    <p class="px-3 has-text-weight-bold is-size-7">Fin</p>
+                    <input type="date" class="input is-small">
+                </div>
+    
+                <div class="is-flex is-justify-content-center is-align-items-center my-2">
+                    <div class="my-2 dropdown">
+                        <div class="dropdown-trigger has-background-white-ter">
+                            <a class="navbar-link has-text-weight-bold " aria-haspopup="true" aria-controls="dropdown-menu">
+                                <span>Sector</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </div>
+        
+                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    Opcion 1
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Opcion 2
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Opcion 3
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Opcion 4
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </div>  
             </div>
 
-
+            
+    
+            <div class="is-flex is-justify-content-center is-align-items-center">
+                <button class="is-flex is-justify-content-center button is-medium has-text-black"
+                    style="background-color: #FEAF00;">
+                    Repetir horarios de la semana anterior
+                </button>
+        
+            </div>
         </div>
-
-
-        <button class="button is-medium is-responsive has-text-black m-5 " style="background-color: #FEAF00;">
-            Repetir horarios de la semana anterior
-        </button>
     </div>
-
 
 
     <div class="table-container">
@@ -600,7 +605,8 @@
         </table>
     </div>
 
-    <div class="dropdown navbar-item has-background-grey-darker  is-justify-content-center is-align-content-center is-flex-wrap-wrap">
+    <div
+        class="dropdown navbar-item has-background-grey-darker  is-justify-content-center is-align-content-center is-flex-wrap-wrap">
         <div class="dropdown-trigger ">
             <a class=" has-text-weight-bold has-text-white" aria-haspopup="true" aria-controls="dropdown-menu">
                 <span>Empleado a prestamo de otros sectores</span>
